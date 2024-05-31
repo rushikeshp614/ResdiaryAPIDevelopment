@@ -7,6 +7,7 @@ const getCurrentDate = () => {
 
 const getStartDate = (startDate) => {
     return new Date(startDate);
+   
 }
 
 module.exports = {getCurrentDate, getStartDate};

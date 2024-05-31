@@ -62,7 +62,7 @@ const BookingModificationSchema = new mongoose.Schema({
   NewProviderName: String
 });
 
-// Compound index on BookingId and ChangeDateTime
+
 BookingModificationSchema.index({ ChangeDateTime: 1 }, { unique: true });
 
 const BookingModification = mongoose.model('BookingModification', BookingModificationSchema);
